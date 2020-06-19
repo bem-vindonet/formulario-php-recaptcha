@@ -1,4 +1,4 @@
-# fomulario-php-recaptcha
+# formulario-php-recaptcha
 Exemplo de formulário de contato em PHP com reCAPTCHA e Boostrap 4.
 
 Faz verificação dos campos do formulário e retorna uma lista de erros (campos faltando, e-mail inválido), caso haja algum. O Bootstrap 4 é usado como base do layout do formulário e do alerta de erros.
