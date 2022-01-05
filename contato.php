@@ -59,7 +59,7 @@ if (isset($_POST['enviar']))
 	$response = null;
 	$reCaptcha = new ReCaptcha($chave_secreta);
 
-	if ($_POST['g-recaptcha-response'])
+	if (!empty($_POST['g-recaptcha-response']))
 		$response = $reCaptcha->verifyResponse($_SERVER['REMOTE_ADDR'], $_POST['g-recaptcha-response']);
 
 	if ($response == null || !$response->success)
